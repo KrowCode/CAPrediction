@@ -1,0 +1,179 @@
+
+svg {
+    background-color: #ccccff;
+}
+
+path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.land.active {
+    fill: #00FF00 !important;
+}
+
+.land {
+  fill: #bbb;
+}
+
+.border {
+  pointer-events: none;
+  fill: none;
+  stroke: #fff;
+}
+
+.border--district {
+  stroke-width: .5px;
+}
+
+.border--state {
+  stroke-width: 1.5px;
+}
+
+body{
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     background-color: #99aacc;
+     text-align: center;
+     font-size: x-large;
+}    
+
+div.blocksBackground {
+    padding:20px;
+    background-color: #ccccff;
+}
+
+div.delegateBox.active {
+    background-color: #00FF00 !important;
+}
+
+div.delegateBox {
+    display: inline-block;
+    width: 20px;    
+    margin: 5px 1px;
+    background-color: #bbbbbb;
+    vertical-align : bottom;
+}
+
+
+div.stateBox {
+    display: inline-block;
+    margin-right: 2px;
+    background-color: #bbbbbb;
+    vertical-align : middle;
+    width : 5px;
+    height : 15px;
+}
+
+div#stateBlocks{
+    line-height : 75%;
+}
+
+div.stateBox.active {
+    background-color: #00FF00 !important;
+}
+
+div.topbar{
+    width:100%;
+    background-color : blue;
+}
+
+div.topbar.active {
+    background-color: #00FF00 !important;
+}
+
+#viz{
+    background-color:#bbbbbb;
+    width : 760px;
+    display:inline-block;
+}
+
+#blocks{
+    margin-top: 10vh;
+    padding:0px;
+    width:300px;
+    display:inline-block;
+    vertical-align:bottom;
+}
+
+#stateBlocks
+{   
+    vertical-align: top;
+    display: inline-block;
+    width:260px;
+}
+#container
+{
+    display:inline-block;
+    width:300px;
+    height:700px;
+}
+#caMap{
+    display:inline-block;
+    position:relative;
+    vertical-align:top;
+    height:700px;
+}
+
+div.pollData
+{
+    display: inline-block;
+    padding-left: 10px;
+    font-size: medium;
+    text-align: left;
+    width: 50%;
+    height: 20%;
+    float:left;
+/*    background-color: purple;
+*/}
+
+.results
+{
+    text-align: left;
+    font-size:medium;
+    display: inline-block;
+    float:left;
+/*    background-color: purple;
+*/    height: 20%;
+    width: 48.25%;
+}
+#california{
+    width : 400px;
+    height : 700px;
+    display : inline-block;
+}
+
+#scaleobj{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:175px;
+}
+
+#minValue{
+    position:absolute;
+    right:35px;
+    bottom:0px;
+}
+
+#maxValue{
+    position:absolute;
+    right:35px;
+}
+
+#scale{
+    width:35px;
+    height:175px;
+    background-color:white;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+div#predictions
+{
+    margin-top: 3vh;
+    display: inline-block;
+    width: 80%;
+    height: 20vh;
+    background-color:  #ffffb3;
+}

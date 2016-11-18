@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CAmap.css"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<h1>California Democratic Primary</h1>
+
+
+<div id="viz">
+<select id="modelOptions">
+</select> 
+<select id="dataOptions">
+</select> 
+<br>
+    <div id = "predictions">
+      <div id = "poll1" class = pollData></div><div id = "result1" class = results></div>
+      <div id = "poll2" class = pollData></div><div id = "result2" class = results></div>
+      <div id = "poll3" class = pollData></div><div id = "result3" class = results></div>
+      <div id = "modelVote" class = pollData>Model Predicts Vote</div><div id = "voteResults" class = results></div>
+      <div id = "modelDelegate" class = pollData>Model Predicts Delegates</div><div id = "delegateResults" class = results></div>
+    </div>
+    <div id = "container">
+    <div id="stateBlocks" class="blocksBackground">
+    <h5>State Delegates</h5></div>
+    <div id="blocks" class="blocksBackground">
+    <h5>Per District Delegates</h5></div>
+    </div>
+    <div id="caMap">
+        <svg id="california"></svg>
+        <div id="scaleobj">
+            <div id="scale"></div>
+            <div id="maxValue"></div>
+            <div id="minValue"></div>
+        </div>
+    </div>
+
+</div>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/queue.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="primary.js"></script> <!-- button action -->
+<script src="CAmap.js"></script>
+<script src="blocks.js"></script>  <!-- adds the blocks -->
+<script src="selection.js"></script>
+</body>
+</html>
